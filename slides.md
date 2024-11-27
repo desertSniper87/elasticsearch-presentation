@@ -42,16 +42,15 @@ hide: true
 - Ingest Pipeline
 
 ---
-layout: center
+layout: default
 hideInToc: true
 image: https://cover.sli.dev
-
 ---
 
 
 # Presentation Outline
 
-<Toc />
+<Toc columns=2 />
 
 
 ---
@@ -75,7 +74,6 @@ background: https://cover.sli.dev
 
 ## Observability of Applications vs Observability of Systems
 
----
 
 
 ---
@@ -106,7 +104,7 @@ layout: default
 
 ---
 
-### Overlap and Differences:
+### Overlap and Differences
 
 - **Overlap**: Both share some concerns, such as logging and metrics, but differ in granularity and scope. They often feed into the same dashboards for holistic observability.
 - **Differences**:
@@ -148,7 +146,7 @@ background: assets/Elasticsearch101-Picture_2.webp
 layout: quote
 ---
 
-# SRE Performance Monitoring
+## SRE Performance Monitoring
 
 https://www.brendangregg.com/Slides/SREcon_2016_perf_checklists.pdf
 
@@ -157,9 +155,10 @@ https://www.brendangregg.com/Slides/SREcon_2016_perf_checklists.pdf
 layout: image
 image: assets/SREcon_2016_perf_checklists_002.jpg
 backgroundSize: 80% 100%
+title: Checklist
+hideInToc: true
 ---
 
-## Checklist
 
 ---
 layout: image-right
@@ -177,14 +176,24 @@ image: https://cover.sli.dev
 - Traces
 
 ---
+layout: image
+image: assets/Screenshot 2024-11-27 at 10.58.45 AM.png
+backgroundSize: 80% 70%
+
+---
+## Inventory
+
+
+---
 layout: section
 ---
 
-## Log Ingestion
+## Log Ingestion (Demo)
 
 ---
 layout: iframe
 url: https://kibana.bcc-ca.gov.bd:8888/app/logs/stream?logView=(logViewId:default,type:log-view-reference)&flyoutOptions=(flyoutId:!n,flyoutVisibility:hidden,surroundingLogsId:!n)&logFilter=(filters:!(),query:(language:kuery,query:%27%27),refreshInterval:(pause:!f,value:5000),timeRange:(from:now-1d,to:now))&logPosition=(position:(tiebreaker:0,time:1732697617225))
+hideInToc: true
 ---
 
 ## Log
@@ -192,8 +201,10 @@ url: https://kibana.bcc-ca.gov.bd:8888/app/logs/stream?logView=(logViewId:defaul
 ---
 layout: iframe
 url: https://kibana.bcc-ca.gov.bd:8888/app/r/s/HH219
+hideInToc: true
 ---
----
+
+## Log2
 
 
 ---
@@ -205,23 +216,43 @@ background: assets/Elasticsearch101-Picture_2.webp
 # Custom Dashboard for VMs
 
 ---
+layout: section
+---
+
+## Single VMs
+
+
+---
 layout: iframe
 url: https://kibana.bcc-ca.gov.bd:8888/app/r/s/q1XQD
----
-PLACEHOLDER
+hideInToc: true
 ---
 
+## Dashboard iframe (single vm)
 
 ---
+layout: section
+---
+
+## Multiple VMs
+
+---
+layout: iframe
+url: https://kibana.bcc-ca.gov.bd:8888/app/r/s/WqdT6
+hideInToc: true
+---
+
+## Multiple VMs
+
 
 
 ---
 layout: image
 image: assets/Screenshot 2024-11-27 at 10.58.45 AM.png
 backgroundSize: 80% 70%
+
 ---
-# Inventory
----
+## Inventory
 
 
 ---

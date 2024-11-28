@@ -23,23 +23,6 @@ Samidhya Sarker<br/>
 Assistant Programmer<br/>
 Bangladesh Computer Council
 
----
-layout: image-right
-image: https://cover.sli.dev
-hide: true
----
-
-# Outline
-
-- Observability
-- Elastic Stack
-  - Elasticsearch
-  - Kibana
-  - Elastic Agent
-    - Beats
-- Systems Performance Monitoring
-- Application Monitoring
-- Ingest Pipeline
 
 ---
 layout: default
@@ -47,6 +30,10 @@ hideInToc: true
 image: https://cover.sli.dev
 ---
 
+<style>
+  
+
+</style>
 
 # Presentation Outline
 
@@ -507,9 +494,29 @@ layout: section
 ## Sample Dashboard (BCC-CA-Boot)
 
 ---
+layout: iframe
+url: https://kibana.bcc-ca.gov.bd:8888/app/r/s/ZCGdI
+showInToc: False
 ---
 
-Placeholder
+
+---
+layout: section
+---
+
+## Synthetics
+
+
+---
+layout: iframe
+url: https://kibana.bcc-ca.gov.bd:8888/app/synthetics
+---
+
+---
+layout: cover
+---
+
+# Alerts
 
 
 ---

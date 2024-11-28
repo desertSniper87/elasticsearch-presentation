@@ -23,13 +23,16 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: 'lts/*'
+          node-version: "lts/*"
 
       - name: Setup @antfu/ni
         run: npm i -g @antfu/ni
 
       - name: Install dependencies
         run: nci
+
+      - name: Install for PDF
+        run: npm i -D playwright-chromium
 
       - name: Build
         run: nr build --base /${{github.event.repository.name}}/
@@ -51,4 +54,5 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
+
         uses: actions/deploy-pages@v4

@@ -88,7 +88,7 @@ image: https://cover.sli.dev
     - **Topology**: Relationships and dependencies between system components, such as container orchestration with Kubernetes.
     - **Primary Tools**: Infrastructure monitoring tools like Prometheus, Grafana, Nagios, or Splunk.
     - **Use Case**: Diagnosing issues like high server load, network latency, or disk space exhaustion.
-  
+
 ---
 layout: default
 ---
@@ -118,7 +118,9 @@ To achieve comprehensive observability, combine both domains, ensuring both appl
 layout: two-cols-header
 level: 2
 ---
-# Roles
+
+## Roles
+
 ::left::
 ## Sysadmin
 <img
@@ -134,6 +136,35 @@ level: 2
     alt="Image 2"
     style="width: 70%"
 />
+
+---
+layout: section
+---
+
+## Elastic Architecture
+
+---
+layout: default
+---
+
+### Ingestion of Logs
+
+![Elastic Architecture](https://www.elastic.co/guide/en/fleet/master/images/agent-architecture.png)
+
+---
+
+### Fleet Server Architecture
+
+![Elastic Architecture](https://www.elastic.co/guide/en/fleet/current/images/fleet-server-cloud-deployment.png)
+
+---
+layout: image-right
+image: https://cover.sli.dev
+---
+
+### Beats Architecture
+
+<img src="https://static-www.elastic.co/v3/assets/bltefdd0b53724fa2ce/bltf8ff84bb00690338/652569565679eb17f76df06e/Screenshot_2023-10-10_at_9.09.57_AM.png" alt="Elastic Architecture" style="width: 100%">
 
 ---
 layout: cover
@@ -176,12 +207,16 @@ image: https://cover.sli.dev
 - Traces
 
 ---
-layout: image
-image: assets/Screenshot 2024-11-27 at 10.58.45 AM.png
-backgroundSize: 80% 70%
-
+layout: default
+# backgroundSize: 80% 70%
 ---
 ## Inventory
+
+<img
+    src="./assets/Screenshot 2024-11-27 at 10.58.45 AM.png"
+    alt="Image 2"
+    style="display: block; margin: 0 auto; width: 70%"
+/>
 
 
 ---
@@ -246,48 +281,235 @@ hideInToc: true
 
 
 
----
-layout: image
-image: assets/Screenshot 2024-11-27 at 10.58.45 AM.png
-backgroundSize: 80% 70%
-
----
-## Inventory
 
 
 ---
-layout: quote
+layout: cover
+background: https://plus.unsplash.com/premium_photo-1661855036857-7855c8de519e?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGhvcnNlfGVufDB8fDB8fHww
 ---
 
 
 # Applications Performance Monitoring
 
 ---
-layout: default
+layout: image-right
+image: https://plus.unsplash.com/premium_photo-1668373587657-0211ba2b8805?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
 ---
 
 
 
-# APM
+## APM Tools
 
-- Tools
-  - Counters
-  - Profiling
-  - Tracing
-
----
-layout: center
-class: text-center
----
+- Counters
+- Profiling
+- Tracing
 
 ---
 
+### 1. Counters
+- Real-time **metrics** tracking for **key performance indicators**
+- Monitors system vitals like **requests/sec, error rates, and resource usage**
+- Enables **threshold-based alerting** and trend analysis
+
+### 2. Profiling
+- Deep dive analysis of application runtime behavior
+- **CPU, memory, and thread usage examination**
+- Identifies performance bottlenecks and resource-intensive operations
+
+### 3. Tracing
+- End-to-end visibility of request flow through distributed systems
+- Tracks latency across **service boundaries and components**
+- Helps diagnose issues in microservices architectures
+
+---
+
+## Counters
+These are like the gauges in your car's dashboard. They constantly measure and record specific metrics in your application:
+- Request rates: How many users/calls your system handles per second
+- Error rates: How often things go wrong (like 404s or 500s)
+- Response times: How fast your system responds
+- Resource usage: CPU, memory, disk space consumption
+- Custom business metrics: Like number of orders processed
+
+Counters are great for real-time monitoring and alerting. For example, if your error rate suddenly spikes above 1%, you can get an immediate notification.
+
+---
+
+## Profiling
+Think of profiling as taking an X-ray of your application while it's running. It reveals:
+- Which functions are taking the most time to execute
+- Memory allocation and garbage collection patterns
+- CPU usage across different threads
+- Database query performance
+- Hot spots in your code that need optimization
+
+For example, profiling might reveal that a particular database query is taking 80% of your response time, helping you identify exactly what to optimize.
+
+---
+
+## Tracing
+
+Imagine following a letter through the postal system - that's what tracing does for requests in your system:
+- Follows a single request as it moves through different services
+- Records timing at each step
+- Shows the relationships between services
+- Helps understand the full journey of a request
+
+For example, when a user experiences slow checkout, tracing can show that it's because the payment service is slow, not the shopping cart service.
+
+---
+layout: image-right
+image: https://plus.unsplash.com/premium_photo-1694740334454-36a9ad351a68?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8c3BlZWRvbWV0ZXJ8ZW58MHx8MHx8fDA%3D
+---
+
+These three tools work together to give you complete visibility:
+- Counters tell you THAT something is wrong
+- Profiling tells you WHY something is wrong within a service
+- Tracing tells you WHERE something is wrong across services
+
+When combined, these tools make troubleshooting much faster and more effective. Instead of guessing what might be wrong, you have concrete data pointing to the exact issue.
+
+---
+layout: section
+---
+
+## Log Ingestion
+
+---
+layout: section
+---
+
+### Built in integrations
+
+---
+layout: image
+image: ./assets/Screenshot 2024-11-28 at 12.35.31 PM.png
+backgroundSize: 80%
+---
+
+---
+layout: section
+---
+
+### Custom Logs
+
+---
+layout: image
+image: ./assets/Screenshot 2024-11-28 at 12.44.45 PM.png
+backgroundSize: 80%
+---
+
+
+
+---
+
+Suppose we have a web server that is producing logs like this:
+
+```java
+2024-02-05T09:47:36,919+06:00 INFO  com.ca.ekyc.activity.LogServiceImpl - Log Event - EventLog [id=0, entityId=-1, module=API_ACCESS, action=READ, message=Request to method: getUserCertificate, description=CertificateRequest [userId=01715297522], ipAddress=172.22.21.34, username=bcc-esign-api-user, datetime=2024-02-05T09:47:36.918970]
+2024-02-05T09:47:47,040+06:00 INFO  com.ca.ekyc.user.service.AdssUserService - ADSS GetUser Found - UserId:  01715297522
+2024-02-05T09:47:47,138+06:00 INFO  com.ca.ekyc.activity.LogServiceImpl - Log Event - EventLog [id=0, entityId=-1, module=CERTIFICATE, action=READ, message=ADSS  User certificate, description=ADSS user certificate using api call, ipAddress=172.22.21.34, username=bcc-esign-api-user, datetime=2024-02-05T09:47:47.137280]
+2024-02-05T09:47:47,147+06:00 INFO  com.ca.ekyc.activity.LogServiceImpl - Log Event - EventLog [id=0, entityId=-1, module=API_ACCESS, action=READ, message=Response to method: getUserCertificate, description=ApiResponse [status=true, data=AdssCertificate [userId=01715297522, keyAlias=01715297522-311661bd-c1fe-4a78-b61a-6df9aaf158ca, keyStatus=ACTIVE], message=User certificate is found, statusCode=200, statusText=OK, path=/api/v1/user-certificate], ipAddress=172.22.21.34, username=bcc-esign-api-user, datetime=2024-02-05T09:47:47.147421]
+2024-02-05T09:47:47,154+06:00 INFO  com.ca.ekyc.interceptor.CommonApiInterceptor - CommonApiInterceptor  Completed : Username: bcc-esign-api-user, Method: POST, Path: /api/v1/user-certificate, Status : 200
+2024-02-05T09:47:47,457+06:00 INFO  com.ca.ekyc.api.AuthController - Login Request : Username = bcc-esign-api-user
+2024-02-05T09:47:47,461+06:00 INFO  c.ca.ekyc.security.services.UserDetailsServiceImpl - Username: bcc-esign-api-user
+2024-02-05T09:47:47,553+06:00 INFO  com.ca.ekyc.activity.LogServiceImpl - Log Event - EventLog [id=0, entityId=2, module=AUTH, action=READ, message=Login Request, description=Login is successful, ipAddress=172.22.21.34, username=bcc-esign-api-user, datetime=2024-02-05T09:47:47.457699]
+2024-02-05T09:47:47,561+06:00 INFO  com.ca.ekyc.interceptor.CommonApiInterceptor - CommonApiInterceptor  Completed : Username: bcc-esign-api-user, Method: POST, Path: /api/auth/signin, Status : 200
+2024-02-05T09:47:47,571+06:00 INFO  com.ca.ekyc.security.jwt.AuthTokenFilter - username: bcc-esign-api-user roles: [ROLE_CLIENT]
+2024-02-05T15:08:35,622+06:00 ERROR com.ca.ekyc.api.RestSigningController - Get Certificate Error - UserId doesn't exist: 01517109340, Trace:
+java.lang.Exception: UserId doesn't exist: 01517109340
+        at com.ca.ekyc.user.service.AdssCertificateService.getUserCertificate(AdssCertificateService.java:188)
+        at com.ca.ekyc.api.RestSigningController.getUserCertificate(RestSigningController.java:96)
+        at com.ca.ekyc.api.RestSigningController$$FastClassBySpringCGLIB$$2ca0c3e.invoke(<generated>)
+        at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+        ...
+        ...
+```
+
+---
+layout: image-right
+image: https://plus.unsplash.com/premium_photo-1673770408482-633babf2d18d?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+---
+
+### Ingest Pipeline
+
+#### Multiline Configration
+
+```yaml
+multiline.pattern: '`^[0-9]{4}-[0-9]{2}-[0-9]{2}\s[0-9]{2}:[0-9]{2}:[0-9]{2}\.[0-9]{4}`'
+multiline.negate: true
+multiline.match: after
+multiline.timeout: 15s
+multiline.max_lines: 5000
+```
+---
+
+#### Processor
+
+```json
+[
+  {
+    "grok": {
+      "field": "message",
+      "patterns": [
+        "%{DATA:timestamp} \\[%{DATA:thread}\\] %{LOGLEVEL:level} %{JAVAFILE:class} - %{GREEDYMULTILINE:message}"
+      ],
+      "pattern_definitions": {
+        "GREEDYMULTILINE": "(.|\n)*"
+      }
+    }
+  }
+]
+```
+
+#### Binding Processor to Custom Logs Integration
+
+```yaml
+pipeline: logs-signinghub-pipeline
+```
+
+---
+layout: image
+image: ./assets/spring.svg
+backgroundSize: 50% 
+---
+
+## Network Schematic
+
+---
+layout: image
+image: ./assets/Screenshot 2024-11-28 at 10.18.52 AM.png
+backgroundSize: 80% 
+---
+
+## Logs in Elasticsearch Dashboard (Quicksign-API)
+
+---
+layout: iframe
+url: https://kibana.bcc-ca.gov.bd:8888/app/r/s/agwth
+---
+
+---
+layout: section
+---
+
+## Sample Dashboard (QuickSign-API)
 
 ---
 layout: iframe
 url: https://kibana.bcc-ca.gov.bd:8888/app/r/s/5bc3C
 ---
+
 ---
+layout: section
+---
+
+## Sample Dashboard (BCC-CA-Boot)
+
+---
+---
+
+Placeholder
 
 
 ---

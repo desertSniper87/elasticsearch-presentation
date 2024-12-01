@@ -10,7 +10,7 @@
       <div
         class="flex flex-col gap-2 bg-light-background dark:bg-dark-background bg-opacity-60 p-2 rounded-md logo"
       >
-        <img src="./assets/bcc-logo.png" alt="bcc" width="12%" />
+        <img src="/bcc-logo.png" alt="bcc" width="12%" />
       </div>
       <div class="flex items-center mr-4">
         <SlideCurrentNo /> / <SlidesTotal />

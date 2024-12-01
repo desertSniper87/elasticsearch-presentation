@@ -148,7 +148,7 @@ image: https://cover.sli.dev
 
 ---
 layout: cover
-background: assets/Elasticsearch101-Picture_2.webp
+background: /Elasticsearch101-Picture_2.webp
 ---
 
 # Systems Monitoring
@@ -164,7 +164,7 @@ https://www.brendangregg.com/Slides/SREcon_2016_perf_checklists.pdf
 
 ---
 layout: image
-image: assets/SREcon_2016_perf_checklists_002.jpg
+image: /SREcon_2016_perf_checklists_002.jpg
 backgroundSize: 80% 100%
 title: Checklist
 hideInToc: true
@@ -193,7 +193,7 @@ layout: default
 ## Inventory
 
 <img
-    src="./assets/Screenshot 2024-11-27 at 10.58.45 AM.png"
+    src="/Screenshot 2024-11-27 at 10.58.45 AM.png"
     alt="Image 2"
     style="display: block; margin: 0 auto; width: 70%"
 />
@@ -224,7 +224,7 @@ hideInToc: true
 
 ---
 layout: cover
-background: assets/Elasticsearch101-Picture_2.webp
+background: /Elasticsearch101-Picture_2.webp
 ---
 
 
@@ -363,7 +363,7 @@ layout: section
 
 ---
 layout: image
-image: ./assets/Screenshot 2024-11-28 at 12.35.31 PM.png
+image: /Screenshot 2024-11-28 at 12.35.31 PM.png
 backgroundSize: 80%
 ---
 
@@ -375,7 +375,7 @@ layout: section
 
 ---
 layout: image
-image: ./assets/Screenshot 2024-11-28 at 12.44.45 PM.png
+image: /Screenshot 2024-11-28 at 12.44.45 PM.png
 backgroundSize: 80%
 ---
 
@@ -450,7 +450,7 @@ pipeline: logs-signinghub-pipeline
 
 ---
 layout: image
-image: ./assets/spring.svg
+image: /spring.svg
 backgroundSize: 50% 
 ---
 
@@ -458,7 +458,7 @@ backgroundSize: 50%
 
 ---
 layout: image
-image: ./assets/Screenshot 2024-11-28 at 10.18.52 AM.png
+image: /Screenshot 2024-11-28 at 10.18.52 AM.png
 backgroundSize: 80% 
 ---
 
@@ -501,7 +501,7 @@ layout: section
 
 ### Monitor
 
-<img src="./assets/Screenshot 2024-12-01 at 11.00.40 AM.png" alt="Elastic Architecture" style="width: 80%; margin: 0 auto; padding:30px">
+<img src="/Screenshot 2024-12-01 at 11.00.40 AM.png" alt="Elastic Architecture" style="width: 80%; margin: 0 auto; padding:30px">
 
 
 ---
@@ -554,7 +554,7 @@ layout: default
 
 #### Built in Elastic Alerting / Kibana Alerts
 
-<img src="./assets/Screenshot 2024-12-01 at 11.27.30 AM.png" alt="Elastic Architecture" style="width: 50%; margin: 0 auto; padding:30px">
+<img src="/Screenshot 2024-12-01 at 11.27.30 AM.png" alt="Elastic Architecture" style="width: 50%; margin: 0 auto; padding:30px">
 
 ---
 layout: section
@@ -576,7 +576,7 @@ layout: section
 
 ---
 layout: image
-image: ./assets/Screenshot 2024-12-01 at 11.39.06 AM.png
+image: /Screenshot 2024-12-01 at 11.39.06 AM.png
 ---
 
 ---
@@ -588,18 +588,21 @@ background: https://cover.sli.dev
 
 ---
 layout: image
-image: ./assets/user-experience-tab.png
+image: /user-experience-tab.png
 backgroundSize: 80%
 ---
+
+
+---
+layout: image
+image: https://static-www.elastic.co/v3/assets/bltefdd0b53724fa2ce/blt617183d880a2a5fd/61849706a1ce11650a8d3528/screenshot-rum-across-hybrid-cloud.png
+---
+
 
 ---
 layout: center
 class: text-center
 ---
-
----
-layout: image
-image: https://static-www.elastic.co/v3/assets/bltefdd0b53724fa2ce/blt617183d880a2a5fd/61849706a1ce11650a8d3528/screenshot-rum-across-hybrid-cloud.png
 
 # Learn More
 

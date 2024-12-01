@@ -30,14 +30,10 @@ hideInToc: true
 image: https://cover.sli.dev
 ---
 
-<style>
-  
-
-</style>
 
 # Presentation Outline
 
-<Toc columns=2 />
+<Toc columns=2 maxDepth=2 />
 
 
 ---
@@ -45,9 +41,6 @@ layout: quote
 background: https://cover.sli.dev
 ---
 
-<style>
-
-</style>
 
 # Observability
 Observability refers to understanding a system through **observation**, and classifies the tools
@@ -506,6 +499,10 @@ layout: section
 
 ## Synthetics
 
+### Monitor
+
+<img src="./assets/Screenshot 2024-12-01 at 11.00.40 AM.png" alt="Elastic Architecture" style="width: 80%; margin: 0 auto; padding:30px">
+
 
 ---
 layout: iframe
@@ -513,19 +510,98 @@ url: https://kibana.bcc-ca.gov.bd:8888/app/synthetics
 ---
 
 ---
+layout: section
+---
+
+## Sample APM Dashboard
+
+---
+layout: iframe
+url: https://kibana.bcc-ca.gov.bd:8888/app/apm/services/bcc-ca-boot/overview?comparisonEnabled=true&environment=ENVIRONMENT_ALL&kuery=&latencyAggregationType=avg&offset=1d&rangeFrom=now-24h%2Fh&rangeTo=now&serviceGroup=&transactionType=request
+---
+
+---
 layout: cover
 ---
 
-# Alerts
+## Alerts
 
+---
+layout: section
+---
+
+### Monitoring Alerts
+
+---
+layout: image
+image: https://www.elastic.co/guide/en/kibana/current/images/alerting-overview.png
+---
+
+---
+layout: image-right
+image: https://cover.sli.dev
+---
+
+### Tools
+
+- Built in Elastic Alerting / Kibana Alerts
+- ElastAlert2
+- Using the Elasticsearch API
+
+---
+layout: default
+---
+
+#### Built in Elastic Alerting / Kibana Alerts
+
+<img src="./assets/Screenshot 2024-12-01 at 11.27.30 AM.png" alt="Elastic Architecture" style="width: 50%; margin: 0 auto; padding:30px">
+
+---
+layout: section
+---
+
+#### ElastAlert2
+
+---
+layout: iframe
+url: https://elastalert2.readthedocs.io/en/latest/elastalert.html
+---
+
+
+---
+layout: section
+---
+
+#### Using the Elasticsearch API
+
+---
+layout: image
+image: ./assets/Screenshot 2024-12-01 at 11.39.06 AM.png
+---
+
+---
+layout: cover
+background: https://cover.sli.dev
+---
+
+## Real User Monitoring (RUM) / User Experience
+
+---
+layout: image
+image: ./assets/user-experience-tab.png
+backgroundSize: 80%
+---
 
 ---
 layout: center
 class: text-center
 ---
 
+---
+layout: image
+image: https://static-www.elastic.co/v3/assets/bltefdd0b53724fa2ce/blt617183d880a2a5fd/61849706a1ce11650a8d3528/screenshot-rum-across-hybrid-cloud.png
+
 # Learn More
 
-[Documentation](https://sli.dev) · [GitHub](https://github.com/slidevjs/slidev) · [Showcases](https://sli.dev/resources/showcases)
+[Documentation](https://www.elastic.co/docs) · [Installation](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html)
 
-<PoweredBySlidev mt-10 />

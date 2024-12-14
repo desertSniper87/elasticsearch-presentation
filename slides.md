@@ -35,6 +35,14 @@ image: https://cover.sli.dev
 
 <Toc columns=2 maxDepth=2 />
 
+---
+layout: default
+---
+# Elasticsearch
+
+- Elasticsearch is a real-time **distributed search and analytics engine**.
+- distributed, multitenant-capable full-text search engine with an HTTP web interface and schema-free JSON documents.
+- Based on Apache Lucene
 
 ---
 layout: quote

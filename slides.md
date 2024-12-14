@@ -36,7 +36,7 @@ image: https://cover.sli.dev
 <Toc columns=2 maxDepth=2 />
 
 ---
-layout: default
+layout: quote
 ---
 # Elasticsearch
 
@@ -615,4 +615,8 @@ class: text-center
 # Learn More
 
 [Documentation](https://www.elastic.co/docs) · [Installation](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html)
+
+## Slides
+
+https://desertsniper87.github.io/elasticsearch-presentation
 
